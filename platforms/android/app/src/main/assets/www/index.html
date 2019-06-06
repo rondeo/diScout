@@ -3,8 +3,7 @@
 
     <style>
 
-        @media(orientation: landscape) {}
-
+        
         .container{
             /*  margin: 20px auto; */
 
@@ -66,10 +65,10 @@
                     /*    document.getElementById("painel").style="grid-template-columns: repeat(2, 1fr)"; */
                     document.getElementById("Passe").innerText="Passe";
                     document.getElementById("Perda").innerText="Perda de Bola";
-                    document.getElementById("BolaFundoSofrida").className="d-lg-none";
+                    document.getElementById("BolaFundoSofrida").style.display="none";
                     document.getElementById("Interrupcao").innerText="Interrupção";
                     document.getElementById("Remate").innerText="Remate";
-                    document.getElementById("BolaFundoCometida").className="d-lg-none";
+                    document.getElementById("BolaFundoCometida").style.display="none";
                     return
 
                 }
@@ -80,18 +79,18 @@
                     document.getElementById("Passe").innerText="Falta Sofrida";
                     document.getElementById("Perda").innerText="Bola Fundo Lateral Sofrida";
 
-                    document.getElementById("BolaFundoSofrida").className="d-block bg-success"; 
+                    document.getElementById("BolaFundoSofrida").style.display="inline"; 
                     document.getElementById("BolaFundoSofrida").style.width="200px";
                     document.getElementById("BolaFundoSofrida").style.marginRight="10px";
 
                     document.getElementById("Interrupcao").innerText="Falta Cometida";
-                    document.getElementById("Interrupcao").className="d-block bg-success";
+                    document.getElementById("Interrupcao").style.display="inline";
                     document.getElementById("Interrupcao").disabled=false;
 
                     document.getElementById("Remate").innerText="Bola Fundo Lateral Cometida";
-                    document.getElementById("Remate").className="d-block bg-success";
+                    document.getElementById("Remate").style.display="inline";
                     document.getElementById("Remate").disabled=false;
-                    document.getElementById("BolaFundoCometida").className="d-block bg-success";
+                    document.getElementById("BolaFundoCometida").style.display="inline";
                     return
 
                 }
@@ -109,12 +108,12 @@
                     /*  document.getElementById("painel").style="grid-template-columns: repeat(2, 1fr)"; */
                     document.getElementById("Passe").innerText="Interrupção";
                     document.getElementById("Perda").innerText="Recuperou a Bola";
-                    document.getElementById("BolaFundoSofrida").className="d-lg-none";
-                    document.getElementById("Interrupcao").className="d-lg-none";
+                    document.getElementById("BolaFundoSofrida").style.display="none";
+                    document.getElementById("Interrupcao").style.display="none";
                     document.getElementById("Interrupcao").disabled=true;
-                    document.getElementById("Remate").className="d-lg-none";
+                    document.getElementById("Remate").style.display="none";
                     document.getElementById("Remate").disabled=true;
-                    document.getElementById("BolaFundoCometida").className="d-lg-none";
+                    document.getElementById("BolaFundoCometida").style.display="none";
                     return
                 }
 
@@ -134,10 +133,10 @@
                     document.getElementById("Passe").innerText="Passe";
                     document.getElementById("Perda").innerText="Perda de Bola";
                     document.getElementById("Interrupcao").innerText="Interrupção";
-                    document.getElementById("Interrupcao").className="d-block bg-success";
+                    document.getElementById("Interrupcao").style.display="inline";
                     document.getElementById("Interrupcao").disabled=false;
                     document.getElementById("Remate").innerText="Remate";
-                    document.getElementById("Remate").className="d-block bg-success";
+                    document.getElementById("Remate").style.display="inline";
                     document.getElementById("Remate").disabled=false;
                     return
 
@@ -148,10 +147,10 @@
                     /* document.getElementById("painel").style="grid-template-columns: repeat(2, 1fr)"; */
                     document.getElementById("Passe").innerText="Passe";
                     document.getElementById("Perda").innerText="Perda de Bola";
-                    document.getElementById("BolaFundoSofrida").className="d-lg-none";
+                    document.getElementById("BolaFundoSofrida").style.display="none";
                     document.getElementById("Interrupcao").innerText="Interrupção";
                     document.getElementById("Remate").innerText="Remate";
-                    document.getElementById("BolaFundoCometida").className="d-lg-none";
+                    document.getElementById("BolaFundoCometida").style.display="none";
                     return
 
                 }
@@ -162,16 +161,16 @@
                     document.getElementById("Passe").disabled=false;
                     document.getElementById("Perda").innerText="Recuperou a Bola";
                     document.getElementById("Perda").disabled=false;
-                    document.getElementById("Interrupcao").className="d-lg-none";
-                    document.getElementById("Remate").className="d-lg-none";
+                    document.getElementById("Interrupcao").style.display="none";
+                    document.getElementById("Remate").style.display="none";
                     return
                 }
 
                 document.getElementById("Passe").innerText="Interrupção";
                 document.getElementById("Perda").innerText="Recuperou a Bola";
-                document.getElementById("Interrupcao").className="d-lg-none";
+                document.getElementById("Interrupcao").style.display="none";
                 document.getElementById("Interrupcao").disabled=true;
-                document.getElementById("Remate").className="d-lg-none";
+                document.getElementById("Remate").style.display="none";
                 document.getElementById("Remate").disabled=true;
             }
 
@@ -181,12 +180,12 @@
 
                     document.getElementById("Passe").innerText="Interrupção";
                     document.getElementById("Perda").innerText="Recuperou a Bola";
-                    document.getElementById("BolaFundoSofrida").className="d-lg-none";
-                    document.getElementById("Interrupcao").className="d-lg-none";
+                    document.getElementById("BolaFundoSofrida").style.display="none";
+                    document.getElementById("Interrupcao").style.display="none";
                     document.getElementById("Interrupcao").disabled=true;
-                    document.getElementById("Remate").className="d-lg-none";
+                    document.getElementById("Remate").style.display="none";
                     document.getElementById("Remate").disabled=true;
-                    document.getElementById("BolaFundoCometida").className="d-lg-none";
+                    document.getElementById("BolaFundoCometida").style.display="none";
                     return
 
                 } 
@@ -194,12 +193,12 @@
                 document.getElementById("Passe").innerText="Falta Sofrida";
 
                 document.getElementById("Perda").innerText="Bola Fundo Lateral Sofrida";
-                document.getElementById("BolaFundoSofrida").className="bg-success btn-xs col-lg-12"; 
+                document.getElementById("BolaFundoSofrida").style.display="inline"; 
 
                 document.getElementById("Interrupcao").innerText="Falta Cometida";
                 document.getElementById("Remate").innerText="Bola Fundo Lateral Cometida";
 
-                document.getElementById("BolaFundoCometida").className="bg-success btn-xs col-lg-12";
+                document.getElementById("BolaFundoCometida").style.display="inline";
 
 
             }
@@ -208,10 +207,10 @@
 
                 document.getElementById("Passe").innerText="Passe";
                 document.getElementById("Perda").innerText="Perda de Bola";
-                document.getElementById("BolaFundoSofrida").className="d-lg-none";
+                document.getElementById("BolaFundoSofrida").style.display="none";
                 document.getElementById("Interrupcao").innerText="Interrupção";
                 document.getElementById("Remate").innerText="Remate";
-                document.getElementById("BolaFundoCometida").className="d-lg-none";
+                document.getElementById("BolaFundoCometida").style.display="none";
 
             }
 
@@ -219,12 +218,12 @@
 
                 document.getElementById("Passe").innerText="Interrupção";
                 document.getElementById("Perda").innerText="Recuperou a Bola";
-                document.getElementById("BolaFundoSofrida").className="d-lg-none";
-                document.getElementById("Interrupcao").className="d-lg-none";
+                document.getElementById("BolaFundoSofrida").style.display="none";
+                document.getElementById("Interrupcao").style.display="none";
                 document.getElementById("Interrupcao").disabled=true;
-                document.getElementById("Remate").className="d-lg-none";
+                document.getElementById("Remate").style.display="none";
                 document.getElementById("Remate").disabled=true;
-                document.getElementById("BolaFundoCometida").className="d-lg-none";
+                document.getElementById("BolaFundoCometida").style.display="none";
 
             }
 
@@ -260,7 +259,7 @@
                         <button  onclick="changePerda()" id="Perda" style="width: 200px; margin-right: 10px;" class="bg-success"> Perda de Bola </button> 
                     </div>
                     <div class="">
-                        <button  onclick="changeBolaFundoSofrida()" id="BolaFundoSofrida" style="width: 200px; margin-right: 10px;" class="d-lg-none"> Bola Fundo Linha Final Sofrida </button> 
+                        <button  onclick="changeBolaFundoSofrida()" id="BolaFundoSofrida" style="width: 200px; margin-right: 10px; display: none" class="bg-success"> Bola Fundo Linha Final Sofrida </button> 
                     </div>
                 </div>
                 <div class="col-sm-12">
@@ -271,7 +270,8 @@
                         <button  onclick="changeRemate()" id="Remate" style="width: 200px; margin-right: 10px;" class="bg-success"> Remate </button> 
                     </div>
                     <div class="">
-                        <button onclick="changeBolaFundoCometida()" id="BolaFundoCometida" style="width: 200px; margin-right: 10px;" class="d-lg-none"> Bola Fundo Linha Final Cometida </button> 
+                       <button onclick="changeBolaFundoCometida()" id="BolaFundoCometida" style="width: 200px; margin-right: 10px; display: none" class="bg-success"> Bola Fundo Linha Final Cometida </button>  
+                       <!-- <input onclick="changeBolaFundoCometida()" class="twoButtons" type="button" id="BolaFundoCometida" value="Bola Fundo Linha Final Cometida" style="display: none" /> -->
                     </div>
                 </div>
                 -->
